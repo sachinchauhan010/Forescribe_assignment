@@ -1,0 +1,17 @@
+"use client"
+
+import { Sun, Moon } from "lucide-react"
+import { useThemeContext } from "../context/theme-context"
+
+export function ThemeToggle() {
+  const { theme, toggleTheme } = useThemeContext()
+
+  return (
+    <button
+      onClick={toggleTheme}
+      className={`p-2 rounded-full ${theme === "dark" ? "bg-zinc-800" : "bg-white"} transition-colors cursor-pointer`}
+    >
+      {theme === "dark" ? <Moon className="h-5 w-5 text-zinc-400" /> : <Sun className="h-5 w-5 text-amber-500" />}
+    </button>
+  )
+}
