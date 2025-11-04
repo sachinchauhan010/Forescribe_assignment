@@ -3,7 +3,7 @@
 import Image from "next/image";
 import CardGrid from "./components/card-grid";
 import SignupCard from "./components/signup-card";
-import { motion } from "framer-motion";
+import { motion, scale } from "framer-motion";
 import { ThemeToggle } from "./components/theme-toggle";
 import Link from "next/link";
 
@@ -22,16 +22,26 @@ export default function Home() {
 
         {/* Navigation Links */}
         <ul className="hidden sm:flex list-none flex-row w-1/3 justify-evenly text-white">
-          <li className="cursor-pointer">
-            <Link href={'/about'}>
-              About
-            </Link>
-          </li>
-          <li className="cursor-pointer">
+            <motion.li
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              transition={{ type: "spring", stiffness: 260, damping: 20, duration: 0.3, ease: "easeInOut" }}
+              className="cursor-pointer"
+            >
+              <Link href={'/about'}>
+                About
+              </Link>
+            </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ type: "spring", stiffness: 260, damping: 20, duration: 0.3, ease: "easeInOut" }}
+            className="cursor-pointer"
+          >
             <Link href={'/contact'}>
               Contact Us
             </Link>
-          </li>
+          </motion.li>
         </ul>
 
         {/* Theme Toggle */}
@@ -53,13 +63,13 @@ export default function Home() {
       </motion.div>
 
       {/* Main Content */}
-      <div className="relative z-10 flex items-center justify-center min-h-screen flex-col px-4">
+      <div className="relative z-10 flex items-center justify-center min-h-screen flex-col">
         <SignupCard />
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.7 }}
-          transition={{ delay: 0.6, duration: 0.5 }}
-          className="text-xs text-white max-w-md font-medium text-center mt-4"
+          transition={{ delay: 0.6, duration: 0.3 }}
+          className="text-xs text-white max-w-md font-medium mt-3 text-start"
         >
           By clicking “Continue with Google/Microsoft” above, you acknowledge that you have read and understood, and agree to Forescribe's <span className="text-purple-500">Terms & Conditions</span> and <span className="text-purple-500">Privacy Policy</span>.
         </motion.p>
