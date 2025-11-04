@@ -15,7 +15,7 @@ export default function SignupCard() {
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="bg-black/40 dark:bg-zinc-400/40 backdrop-blur-md rounded-xl p-8 lg:px-[70px] lg:py-[40px] max-w-md h-[368px] w-[459px] shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(32,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)]"
+      className="bg-black/40 dark:bg-zinc-400/40 backdrop-blur-md rounded-xl p-8 lg:px-[70px] lg:py-[40px] max-w-md lg:h-[368px] lg:w-[459px] shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(32,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)]"
     >
       <div className="flex flex-col items-center text-center">
         <motion.div
