@@ -15,7 +15,7 @@ export default function SignupCard() {
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="bg-black/40 dark:bg-zinc-400/40 backdrop-blur-md rounded-xl p-8 w-[459px] max-w-md h-80 border border-white/20 dark:border-white/10 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(32,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)]"
+      className="bg-black/40 dark:bg-zinc-400/40 backdrop-blur-md rounded-xl p-8 w-full max-w-md border border-white/20 dark:border-white/10 shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(32,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)]"
     >
       <div className="flex flex-col items-center text-center">
         <motion.div
@@ -56,12 +56,14 @@ export default function SignupCard() {
               duration: 0.3,
               ease: easeInOut
             }}
-            className="flex justify-center items-center gap-x-4 w-full h-11 cursor-pointer bg-purple-600 dark:bg-white dark:text-purple-600 hover:bg-purple-700 hover:text-white text-white py-2 rounded-md transition-all duration-300"
+            role="button"
+            tabIndex={0}
+            className="flex items-center justify-center gap-x-3 sm:gap-x-4 w-full h-10 sm:h-11 px-3 sm:px-0 cursor-pointer bg-purple-600 dark:bg-white dark:text-purple-600 hover:bg-purple-700 hover:text-white text-white rounded-md transition-all duration-300"
           >
-            <FaGoogle className="w-5.5 h-5.5" />
+            <FaGoogle className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
             <button
               aria-label="Continue with Google"
-              className="border-none"
+              className="border-none text-sm sm:text-base font-medium"
             >
               Continue with Google
             </button>
