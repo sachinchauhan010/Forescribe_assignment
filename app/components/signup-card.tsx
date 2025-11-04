@@ -34,7 +34,7 @@ export default function SignupCard() {
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.3 }}
-          className="text-xl font-semibold text-white mb-7 dark:text-black"
+          className="text-lg lg:text-[22px] font-semibold text-white mb-7 dark:text-black"
         >
           Welcome to Forescribe
         </motion.h1>
