@@ -1,8 +1,8 @@
 'use client'
 
 import Image from "next/image";
-import IntegrationGrid from "./components/integration-grid";
-import WelcomeModal from "./components/welcome-modal";
+import CardGrid from "./components/card-grid";
+import SignupCard from "./components/signup-card";
 import { motion } from "framer-motion";
 import { ThemeToggle } from "./components/theme-toggle";
 import Link from "next/link";
@@ -49,12 +49,12 @@ export default function Home() {
           ease: "linear",
         }}
       >
-        <IntegrationGrid />
+        <CardGrid />
       </motion.div>
 
       {/* Main Content */}
       <div className="relative z-10 flex items-center justify-center min-h-screen flex-col px-4">
-        <WelcomeModal />
+        <SignupCard />
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.7 }}

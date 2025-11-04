@@ -164,7 +164,7 @@ const gridItems = [
   ...people.map((item) => ({ ...item, type: "person" })),
 ]
 
-export default function IntegrationGrid() {
+export default function CardGrid() {
   const [shuffledItems, setShuffledItems] = useState<any[]>([]);
 
   // Shuffle the grid items on mount
