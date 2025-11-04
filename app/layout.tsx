@@ -7,7 +7,7 @@ import { ThemeProvider } from "./context/theme-context"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Forescribe",
+  title: "Forescribe Assignment",
   description: "Connect and manage your project integrations",
 }
 
