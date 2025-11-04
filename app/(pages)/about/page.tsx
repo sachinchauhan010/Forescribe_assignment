@@ -37,7 +37,7 @@ export default function AboutPage() {
         </nav>
 
         <motion.article
-          className="bg-zinc-900 rounded-2xl p-6 md:p-10 shadow-2xl border border-zinc-800"
+          className="bg-zinc-900 rounded-2xl p-4 sm:p-6 md:p-10 shadow-2xl border border-zinc-800"
           aria-labelledby="about-heading"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -23,13 +23,13 @@ export default function ContactPage() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -12 }}
       transition={{ duration: 0.45 }}
-      className="min-h-screen p-8 bg-[linear-gradient(135deg,_#000000_33%,_#8B3DFF_89%,_#8B3DFF_100%)]"
+      className="min-h-screen p-2 md:p-4 lg:p-8 bg-[linear-gradient(135deg,_#000000_33%,_#8B3DFF_89%,_#8B3DFF_100%)]"
     >
       <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 items-start">
         {/* Left: Form card */}
         <motion.section
           aria-labelledby="contact-heading"
-          className="rounded-2xl p-8 shadow-2xl bg-white/8 backdrop-blur-md border border-zinc-800"
+          className="rounded-2xl p-4 md:p-6 lg:p-8 shadow-2xl bg-white/8 backdrop-blur-md border border-zinc-800"
           initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.45, delay: 0.05 }}
