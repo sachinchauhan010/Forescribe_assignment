@@ -39,8 +39,8 @@ These are low-risk visual and accessibility improvements; the underlying structu
 
 Requirements:
 
-- Node.js 18+ (recommended)
-- npm (or yarn/pnpm)
+- Node.js
+- npm
 
 Install and run locally:
 
@@ -78,4 +78,3 @@ npm start
 - The assignment is a static, frontend-focused demo with no server-side API requirements.
 - Contact form submissions are placeholders (console.log) unless you wire up an API or service.
 - The design reference may include assets and copy; I kept the UI visually faithful while making small improvements for accessibility and semantics.
-
