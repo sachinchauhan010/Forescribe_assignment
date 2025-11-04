@@ -16,7 +16,7 @@ export default function Home() {
         <Image src={"/assets/ForescribeLogo.png"} alt="Forescribe Logo" width={120} height={40} className="object-contain" />
 
         {/* Desktop Navigation */}
-        <ul className="hidden sm:flex list-none flex-row justify-center gap-x-8 text-white items-center">
+        <ul className="hidden sm:flex list-none flex-row justify-between gap-x-8 text-white items-center mx-auto">
           <motion.li
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
@@ -32,7 +32,7 @@ export default function Home() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             transition={{ type: "spring", stiffness: 260, damping: 20, duration: 0.3, ease: "easeInOut" }}
-            className="cursor-pointer"
+            className="cursor-pointer sm:mr-8 md:mr-10 lg:mr-12"
           >
             <Link href={'/contact'}>
               Contact Us

@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function AboutPage() {
   return (
-    <main className="relative min-h-screen bg-black px-4 py-10 md:px-8" role="main">
+    <main className="relative min-h-screen overflow-hidden bg-black px-2 sm:px-4 py-10 md:px-8" role="main">
       {/* Floating decorative gradient (subtle) */}
       <motion.div
         aria-hidden="true"

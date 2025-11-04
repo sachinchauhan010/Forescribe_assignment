@@ -1,7 +1,6 @@
 "use client"
 
 import { motion, easeInOut } from "framer-motion";
-import Button from "@/app/components/button";
 import Image from "next/image";
 import { FaGoogle, FaWindows } from "react-icons/fa";
 
@@ -15,7 +14,7 @@ export default function SignupCard() {
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="bg-black/40 dark:bg-zinc-400/40 backdrop-blur-md rounded-xl p-8 lg:px-[70px] lg:py-[40px] max-w-md lg:h-[368px] lg:w-[459px] shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(32,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)]"
+      className="bg-black/40 dark:bg-zinc-400/40 backdrop-blur-md rounded-xl w-full p-8 lg:px-[70px] lg:py-[40px] max-w-md lg:h-[368px] lg:w-[459px] shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(32,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)]"
     >
       <div className="flex flex-col items-center text-center">
         <motion.div
@@ -49,9 +48,9 @@ export default function SignupCard() {
             whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
             role="button"
             tabIndex={0}
-            className="flex items-center justify-center gap-x-3 lg:gap-x-[17px] w-full lg:w-[319px] sm:h-[43px] px-3 sm:px-0 cursor-pointer bg-purple-600 dark:bg-white dark:text-purple-600 hover:bg-purple-700 hover:text-white text-white rounded-md transition-all duration-300"
+            className="flex items-center justify-center gap-x-3 lg:gap-x-[17px] w-full lg:w-[319px] h-[43px] px-3 sm:px-0 cursor-pointer bg-purple-600 dark:bg-white dark:text-purple-600 hover:bg-purple-700 hover:text-white text-white rounded-md transition-all duration-300"
           >
-            <FaGoogle className="w-3 h-3 sm:w-[22px] sm:h-[22px] flex-shrink-0" />
+            <FaGoogle className="w-5.5 h-5.5 flex-shrink-0" />
             <button
               aria-label="Continue with Google"
               className="border-none text-sm lg:text-base font-normal"
